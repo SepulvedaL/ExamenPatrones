@@ -12,7 +12,7 @@ public class DispensarDiez extends DispensadoraHandler{
             int cantidadBilletes = cantidad / 10000;
             int sobrante = cantidad % 10000;
             System.out.println("Dispensando " + cantidadBilletes + " billetes de 10000");
-            if (sobrante > 0) this.NextChain.dispensar(sobrante);
+            if (sobrante > 0) NextChain.dispensar(sobrante);
         } else {
             NextChain.dispensar(cantidad);
         }
